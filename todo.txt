@@ -1,0 +1,7 @@
+[✅] - header
+[✅] - navbar 
+[] - о нас
+[] - cards
+[] - slider
+[] - discount 
+[] - footer 

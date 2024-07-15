@@ -1,0 +1,118 @@
+.bg {
+    background-image: url('../../assets/images/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 489px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__text {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 180px;
+        margin-top: 84px;
+
+        @media screen and (max-width: 1200px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+            column-gap: 50px;
+        }
+
+        @media screen and (max-width: 800px) {
+            margin-left: 100px;
+        }
+
+        &-first {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            row-gap: 30px;
+
+            &-h1 {
+                display: flex;
+                align-items: end;
+                column-gap: 5px;
+
+                h1 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 30px;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                color: rgba(29, 29, 29, 0.7);
+            }
+
+            &-icons {
+                display: flex;
+                align-items: center;
+                column-gap: 24px;
+
+                a {
+                    width: 45px;
+                    height: 48px;
+                    background: #FFFFFF;
+                    padding: 13px 11px;
+                    border-radius: 50%;
+                    box-shadow: 0 4px 12px 0 rgba(29, 29, 29, 0.15);
+                    transition: 0.2s;
+
+                    &:nth-of-type(2) {
+                        padding: 15px 18px;
+                    }
+
+                    &:hover {
+                        background: #FFCB45;
+                    }
+                }
+            }
+        }
+
+        &-second,
+        &-third,
+        &-forth {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            row-gap: 30px;
+
+            h1 {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 25px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+            }
+        }
+    }
+
+    &__line {
+        content: '';
+        border: 1px solid rgba(29, 29, 29, 0.5);
+        width: 100%;
+        margin-top: 91px;
+    }
+
+    &__rights {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 45px 0;
+    }
+}
